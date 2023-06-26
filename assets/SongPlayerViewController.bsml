@@ -1,0 +1,27 @@
+<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/gh-pages/schema.xsd'>
+    <vertical id='songLoadingVertical' horizontal-fit="Unconstrained" vertical-fit="Unconstrained">
+        <text align="Center" text='Waiting for songs to finish loading...' font-size="5.0" preferred-width='60.0' />
+    </vertical>
+    <vertical id="mainContentVertical" horizontal-fit="PreferredSize" pref-width="98.0" spacing="1.5" pad-top="3.0">
+        <horizontal child-align='MiddleLeft' preferred-height="20.0" vertical-fit="PreferredSize" child-expand-height="false" child-expand-width='false' spacing="1.0" pad-top="2.0" pad-left="20.0">
+            <image id='songCoverImage' pref-width="17.0" pref-height="17.0" anchor-pos-y="5.0"/>
+            <vertical child-expand-width="false" child-expand-height="false" pref-width="70.0" horizontal-fit="PreferredSize" vertical-fit="PreferredSize" pref-height="18.0" spacing="-2.0" pad-top="20.0" child-align="LowerLeft">
+                <text id='songTitleText' text='Song Title' font-size="5.0" overflow-mode='Ellipsis' />
+                <text id='songAuthorText' text='Song Author' font-size="4.0" color="grey" overflow-mode='Ellipsis'/>
+            </vertical>
+        </horizontal>
+        <vertical>
+            <!-- <image id='progressBarImage' size-delta-x="70.0" size-delta-y="3.0" anchor-max-x="0.0" anchor-max-y="0.0" anchor-min-x="0.0" anchor-min-y="0.0" pref-height="5.0" image-color="white"/> -->
+            <horizontal spacing='84.0' child-expand-width="false">
+                <text id='songProgressText' />
+                <text id='songDurationText' />
+            </horizontal>
+        </vertical>
+        <horizontal>
+            <button id='previousButton' on-click="PreviousButtonPressed" text="Previous"/>
+            <button id='pauseButton' on-click="PauseButtonPressed" text="Pause" />
+            <button id='nextButton' on-click='NextButtonPressed' text='Next'/>
+        </horizontal>
+    </vertical>
+</bg>

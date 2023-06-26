@@ -1,0 +1,13 @@
+<scrollable-settings-container xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/gh-pages/schema.xsd'>
+        <toggle-setting value="enabledBool" text="Enabled" apply-on-change="true"/>
+        <toggle-setting value="autoplayBool" text="Autoplay" hover-hint="Automatically play song on screen activation" apply-on-change="true"/>
+        <horizontal child-expand-width="false" spacing="3.0">
+            <slider-setting id='rotationSlider' text="Rotation" pref-width="45.0" value="rotationFloat" min="-60.0" max="60.0" integer-only="false" increment="0.01" apply-on-change="true"/>
+            <button text="Round" pref-width="25.0" on-click="RoundRotation"/>
+        </horizontal>
+        <horizontal child-expand-width="false" spacing="3.0">
+            <slider-setting id='heightSlider' text="Height" pref-width="45.0" value="heightFloat" min="-10.0" max="10.0" integer-only="false" increment="0.01" apply-on-change="true"/>
+            <button text="Round" pref-width="25.0" on-click="RoundHeight"/>
+        </horizontal>
+</scrollable-settings-container>
