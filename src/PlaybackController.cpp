@@ -1,5 +1,5 @@
 #include "main.hpp"
-#include "/PlaybackController.hpp"
+#include "PlaybackController.hpp"
 
 #include "AsyncMediaLoader.hpp"
 
