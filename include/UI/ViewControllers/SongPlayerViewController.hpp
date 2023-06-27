@@ -4,7 +4,7 @@
 
 #include "lapiz/shared/macros.hpp"
 
-#include "/PlaybackController.hpp"
+#include "PlaybackController.hpp"
 #include "PauseInputController.hpp"
 
 #include "HMUI/ViewController.hpp"
