@@ -1,6 +1,6 @@
-# SongChartVisualizer
+# MenuMusicPlayer
 
-Quest port of [SongChartVisualizer](https://github.com/ErisApps/SongChartVisualizer)
+Allows you to play your playlists as songs ingame!
 
 ## Credits
 
